@@ -30,7 +30,7 @@ import Foundation
 
 // MARK: Perimeter
 // Triangle Circumference
-func TrianglePerimeter(a: Double, b: Double, c: Double) -> String {
+func trianglePerimeter(a: Double, b: Double, c: Double) -> String {
     // Properties of triangles
     if a+b>c && b+c>a && a+c>b {
     return String(a + b + c)
@@ -44,9 +44,9 @@ func TrianglePerimeter(a: Double, b: Double, c: Double) -> String {
     return ""
 }
 // Test case #1
-TrianglePerimeter(a: 10, b: 20, c: 29)
+trianglePerimeter(a: 10, b: 20, c: 29)
 // Test case #2
-TrianglePerimeter(a: 10, b: 20, c: 30)
+trianglePerimeter(a: 10, b: 20, c: 30)
 
 
 // Circumference of Circle
@@ -61,21 +61,50 @@ circlePerimeter(radius: 10)
 // MARK: Area
 
 // Area of parallelogram
-func ParallelogramArea(base: Double, height: Double) -> Double {
+func parallelogramArea(base: Double, height: Double) -> Double {
     return base * height
 }
 
 // Test case
-ParallelogramArea(base: 5, height: 6)
+parallelogramArea(base: 5, height: 6)
 
 
 // Area of circle
-func CircleArea(radius: Double) -> Double {
+func circleArea(radius: Double) -> Double {
     return Double.pi * pow(radius, 2.0)
 }
 
 // Test Case
-CircleArea(radius: 10)
+circleArea(radius: 10)
+
+// MARK: Surface Area
+// Surface Area of Sphere
+func sphereSurfaceArea(radius: Double) -> Double {
+    return Double.pi * 4 * pow(radius, 2.0)
+}
+
+// Test case
+sphereSurfaceArea(radius: 5)
+
+
+// Surface Area of Cone
+func coneSurfaceArea(radius: Double, slantHeight: Double) -> Double {
+    let baseArea = pow(radius, 2.0) + Double.pi
+    let lateralSurface = Double.pi * radius * slantHeight
+    return baseArea + lateralSurface
+}
+
+// Test case
+coneSurfaceArea(radius: 5, slantHeight: 10)
+
+
+// MARK: Volume
+// Volume of cylinder
+func cylinderVolume(radius: Double, height: Double) -> Double {
+    return Double.pi * pow(radius, 2.0) * height
+}
+
+// Te
 /*:
  [Previous: Writing Documentation](@previous) | Page 7
  */
