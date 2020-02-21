@@ -104,7 +104,19 @@ func cylinderVolume(radius: Double, height: Double) -> Double {
     return Double.pi * pow(radius, 2.0) * height
 }
 
-// Te
+// Test case
+cylinderVolume(radius: 5, height: 10)
+
+
+// Volume of Rectangular Prism
+
+func rectangularPrismVolume(length: Double, width: Double, height: Double) -> Double {
+    return width * length * height
+}
+
+// Test case
+
+rectangularPrismVolume(length: 10, width: 10, height: 10)
 /*:
  [Previous: Writing Documentation](@previous) | Page 7
  */
