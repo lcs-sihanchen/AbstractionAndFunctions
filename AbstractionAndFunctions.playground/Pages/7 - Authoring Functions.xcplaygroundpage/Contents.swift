@@ -54,11 +54,28 @@ func circlePerimeter(radius: Double) -> Double {
     return Double.pi * 2 * radius
 }
 
-// Test case #1
+// Test case
 circlePerimeter(radius: 10)
 
 
+// MARK: Area
 
+// Area of parallelogram
+func ParallelogramArea(base: Double, height: Double) -> Double {
+    return base * height
+}
+
+// Test case
+ParallelogramArea(base: 5, height: 6)
+
+
+// Area of circle
+func CircleArea(radius: Double) -> Double {
+    return Double.pi * pow(radius, 2.0)
+}
+
+// Test Case
+CircleArea(radius: 10)
 /*:
  [Previous: Writing Documentation](@previous) | Page 7
  */
