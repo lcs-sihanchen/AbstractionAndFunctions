@@ -28,6 +28,36 @@ import Foundation
 // Begin your work here...
 
 
+// MARK: Perimeter
+// Triangle Circumference
+func TrianglePerimeter(a: Double, b: Double, c: Double) -> String {
+    // Properties of triangles
+    if a+b>c && b+c>a && a+c>b {
+    return String(a + b + c)
+    } else {
+        
+    // Prevent False Input
+    return "Please make sure it is a triangle."
+    }
+    
+    // Not to be executed but to get rid of the debugger
+    return ""
+}
+// Test case #1
+TrianglePerimeter(a: 10, b: 20, c: 29)
+// Test case #2
+TrianglePerimeter(a: 10, b: 20, c: 30)
+
+
+// Circumference of Circle
+func circlePerimeter(radius: Double) -> Double {
+    return Double.pi * 2 * radius
+}
+
+// Test case #1
+circlePerimeter(radius: 10)
+
+
 
 /*:
  [Previous: Writing Documentation](@previous) | Page 7
