@@ -38,7 +38,7 @@ import Foundation
 
 // MARK: Perimeter
 // Triangle Circumference
-func trianglePerimeter(a: Double, b: Double, c: Double) -> Double? {
+func trianglePerimeter(side a: Double,side b: Double,side c: Double) -> Double? {
     // Properties of triangles
     
     guard a > 0, b > 0, c > 0, a+b>c && b+c>a && a+c>b  else {
@@ -47,21 +47,22 @@ func trianglePerimeter(a: Double, b: Double, c: Double) -> Double? {
  // Perimeter
     return a+b+c
 }
-// Test case #1: a:10, b:20, c:29, result: 59
-trianglePerimeter(a: 10, b: 20, c: 29)
-// Test case #2: a:10, b:20, c:30 result: ask for another input
-trianglePerimeter(a: 10, b: 20, c: 30)
 
-trianglePerimeter(a: -2, b: 2, c: 2)
+// Test case #1: a:10, b:20, c:29, result: 59
+trianglePerimeter(side: 10, side: 20, side: 29)
+// Test case #2: a:10, b:20, c:30 result: nil
+trianglePerimeter(side: 10, side: 20, side: 30)
+// Test case #3: a:-2, b: 5, c:3  result: nil
+trianglePerimeter(side: -2, side: 5, side: 3)
 
 
 // Circumference of Circle
-func circlePerimeter(radius: Double) -> Double {
+func circlePerimeter(Of radius: Double) -> Double {
     return Double.pi * 2 * radius
 }
 
 // Test case: radius: 10, result: 20pi = 62.8318...
-circlePerimeter(radius: 10)
+circlePerimeter(Of: 10)
 
 
 // MARK: Area
